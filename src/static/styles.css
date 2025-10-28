@@ -98,6 +98,28 @@ section h3 {
   box-shadow: 0 1px 0 rgba(10, 10, 50, 0.02);
 }
 
+/* Delete button next to each participant */
+.activity-card .participant-delete {
+  margin-left: auto; /* push to the far right */
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #c62828;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background-color 0.15s, transform 0.08s;
+}
+
+.activity-card .participant-delete:hover {
+  background-color: rgba(198,40,40,0.08);
+  transform: translateY(-1px);
+}
+
+.activity-card .participant-delete:active {
+  transform: translateY(0);
+}
+
 .activity-card .avatar {
   width: 34px;
   height: 34px;
